@@ -1,0 +1,1399 @@
+/*reset default*/
+
+html {
+  font-size: 16px;              /* set a consistent base size */
+}
+
+body {
+  line-height: 1.5;            /* set explicitly for consistency */
+  -webkit-font-smoothing: antialiased; /* smooth in Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale;  /* smooth in Firefox */
+}
+
+/* Reset margins/paddings for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.hero{
+    background: #f1dfd7 url(resource/BGresized.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    padding-top: 21px;
+    height: 690px;
+}
+
+header{
+    width: 80%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: auto;
+}
+
+.logo{
+    width: 62px;
+    height: 24px;  
+}
+
+.navigation{
+    display: flex;
+    flex-basis: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    height: 24px;
+    flex-basis: 40%;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.2cqw;
+    font-family: 'Inter',sans-serif;;
+    color: #12141D;
+    align-items: center;
+    gap: 10px;
+}
+
+    nav a{
+        border-top: 2px solid rgba(85, 84, 84, 0.224);
+        padding:  7px 10px;
+        
+        
+        border-radius: 5px;
+    
+    }
+
+    nav a:hover,.headerButtonsContainer button:hover{
+        background-color: rgba(85, 84, 84, 0.224);
+    }
+
+.headerButtonsContainer{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.headerButtonsContainer button{
+   all: unset;
+   padding: 16px 20px;
+   font-weight: 500;
+   font-size: 1.2cqw;
+   text-align: center;
+   font-family: 'Inter',sans-serif;
+   border-radius:5px ;
+   cursor: pointer;
+   border-top: 2px solid rgba(85, 84, 84, 0.224);
+   
+
+} 
+
+.headerButtonsContainer button:last-child{
+    background-color: #12141D;
+    color:#FFFFFF ;
+    margin-left: 5px;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+.headerButtonsContainer button:last-child:hover{
+    background-color: #FFFFFF;
+    color: #12141D ;
+}
+
+.heroContent{
+    display: flex;
+    width: 80%;
+    height: 475px;
+    margin: 70px auto 0;
+  
+}
+
+.socialIconsContainer{
+    position: relative;
+    width: 17%;
+    height: 346.7px;
+    margin-top: 50px;
+   
+    
+}
+
+.topSocialIcon,.bottomSocialIcon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+}
+
+.middleSocialIcon{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+ 
+     
+    
+}
+
+.bottomSocialIcon{
+    bottom: 0;
+}
+
+.item1{
+    position: relative;
+}
+
+.heroContent2 {
+    width: 66%; 
+}
+
+.heroh1{
+    font-family: 'Clash Display', sans-serif;
+    font-size: clamp(30px, 5vw, 56px);
+    font-weight: 600;
+    padding-top: 29px;
+    text-align: center;
+    color: #12141D;
+}
+
+.heroP{
+    margin:25px  auto 0;
+    text-align: center;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:2;
+}
+
+#shapes{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.heroButtonContainer{
+    display: flex;
+    width:75%;
+    margin: 50px auto 0;
+    height: 60px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.heroButtonContainer button{
+    all: unset;
+    flex-basis: 48%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.4cqw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: scale 0.5 ease-in-out;
+}
+
+.heroButtonContainer button:first-child{
+    background-color: #12141D;
+    color: #FFFFFF;
+}
+
+.heroButtonContainer button:last-child{
+    background-color: #FFFFFF;
+    color:#12141D;
+    border: 2px solid #12141D;
+}
+
+.heroButtonContainer button:hover{
+   scale: 1.05;
+}
+
+button img{
+    vertical-align: middle;
+  
+}
+
+.item3{
+    width: 58%;
+    display: flex;
+    margin: 33px  auto 0;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.item3 p{
+    margin-left: auto;
+    font-size: 1.2cqw;
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #334155;
+}
+
+.starsIcon{
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+
+/*main style*/
+
+.mainContentA,
+.mainContentB,
+.mainContentE,
+.mainContentF{
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+.contentGroup1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contentGroup1 h2, .mainContentBArticle h2{
+    flex-basis: 50%;
+    font-size: 3cqw;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+}
+.contentGroup1 p, .mainContentBArticle p, .question p{
+    font-size: 1.2cqw;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    flex-basis: 40%;
+    opacity: 70%;
+}
+
+.contentGroup2, .planContainer,.customerReviewContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.mediaPlan, .planItem, .customerReview{
+    flex-basis:32% ;
+    padding: 20px 25px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.mediaPlan h3{
+   font-family: 'Inter',sans-serif;
+   font-size:1.3cqw ;
+   font-weight: 700;
+   margin: 12px 0 10px;
+}
+
+.mediaPlan p{
+    font-size: 1.1cqw;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    opacity: 70%;
+    margin-bottom: 25px ;
+}
+
+.mediaPlan h5{
+    font-family: 'Inter',sans-serif;
+   font-size:12px ;
+   font-weight: 600;
+}
+
+.arrowIcon{
+    width: 25px;
+    vertical-align: middle;
+}
+
+.mainContentB1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContentB1:last-child{
+    margin-top: 60px;
+}
+
+.mediaImageContainer{
+    flex-basis: 40%;
+}
+.mediaImageContainer img{
+    width: 100%;
+}
+.mainContentBArticle{
+    flex-basis: 50%;
+}
+
+.mainContentBArticle h2{
+    margin-bottom: 25px;
+}
+
+.mainContentBArticle p:first-of-type{
+   margin-bottom: 15px;
+}
+
+.mainContentC{
+    width: 100%;
+    margin-top: 60px;
+    background-color: #E5EEF5;
+    padding: 20px 0;
+}
+
+.experienceContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.experienceContainer h2{
+    font-size: 3cqw;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 500;
+}
+
+.experienceContainer p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    opacity: 60%;
+}
+
+.mainContentD{
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  
+}
+
+.mainContentBArticle h3{
+    font-family: 'Clash Display', sans-serif;
+   font-size:16px ;
+   font-weight: 600;
+   margin-bottom: 7px;
+    
+}
+
+.choosePlan{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.choosePlan h2{
+   font-family: 'Clash Display', sans-serif;
+   font-size:3cqw ;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.chooseButtonContainer{
+    display: flex;
+    width: 55%;
+    padding: 4px 0;
+    margin: auto;
+    justify-content: center;
+    background-color: #f2f8fa;
+    border-radius: 10px;
+    box-sizing: border-box;
+ 
+}
+
+.choosePlan button{
+  all: unset;
+  border-radius: 10px;
+  padding: 5px 25px;
+  font-size: 1.2cqw;
+  font-weight: 500;
+  font-family: 'Inter',sans-serif;
+  cursor: pointer;
+  
+}
+
+.planButton.active{
+    background-color: #86E7B8;
+}
+
+.planItem{
+    border:none;
+}
+.planItem .item1{
+    padding-bottom: 15px;
+    
+}
+
+.planTitle{
+   font-weight: 600;
+  font-family: 'Inter',sans-serif;
+  font-size: 16px;
+}
+
+.planPrice{
+    font-weight: 600;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 40px;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.planPeriod{
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    opacity: 70%;
+}
+
+.planItem .item2{
+    padding: 20px 0;
+    border-top: 1px solid rgba(120, 119, 119, 0.215);
+    
+    
+}
+ .planItem img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.planItem .item2 p{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.1cqw;
+}
+
+.planItem button{
+    all: unset;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+     font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.2cqw;
+    padding: 15px 45px;
+    margin:5px 0 15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.planItem:first-child, .planItem:last-of-type{
+    background-color: #E5EEF5;
+}
+
+.planItem:nth-of-type(2){
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.planItem:nth-of-type(2) button{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.planItem button:hover{
+    background-color: #86E7B8;
+    
+}
+
+.questionContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question{
+    flex-basis: 45%;
+}
+
+.question h3{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    margin-bottom: 20px;
+}
+
+.question:first-child{
+    margin-bottom: 25px;
+}
+
+.mainContentG{
+   position: relative;
+    margin: 40px auto 60px ; 
+    border-bottom: 2px solid#FFFFFF ;
+    border-top: 2px solid#FFFFFF ;
+}
+
+.reviewBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.review{
+    width: 80%;
+    margin: 65px auto ; 
+}
+
+.customerReview{
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.mainContentG h2, .mainContentH h2{ 
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+   font-size:3cqw ;
+   font-weight: 600;
+  
+}
+
+.comment{
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.1cqw;
+    margin: 20px 0px;
+
+}
+.customer{
+   display: flex;
+    gap:7px
+}
+
+.customerProfile p:first-child{
+     font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.customerProfile p:last-child{
+     font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    font-size: 10.5px;
+    opacity: 70%;
+}
+
+.mainContentH{ 
+    width:  80%;
+    margin: 0 auto 60px;
+    background: url(resource/contantbg.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+
+.mainContentH h2{
+    width: 40%;
+}
+
+.mainContentH button{
+    all:unset;
+    display: block;
+    width: 15%;
+    padding: 16px 20px;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 30px auto 0;
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.1cqw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.mainContentH button:hover{
+    background-color: #FFFFFF;
+    color: #12141D;
+}
+
+
+.footerContent{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.footerContent .firstItem{
+    flex-basis: 30%;
+}
+
+.footerContent .secondItem{
+    display: flex;
+    flex-basis: 65%;
+    justify-content: space-between;
+}
+
+form{
+   display: flex;
+    width: 100%;
+    margin-top: 25px;
+    border: 1px solid #12141d24;
+    align-items: center;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+input{
+    padding: 15px 10px;
+    border: none;
+    opacity: 70%;
+}
+
+form button{
+    padding: 15px 19px;
+    background-color: #86E7B8;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 12px;
+    border: none;
+    margin-left: auto;
+    
+}
+
+.lastItem{
+    flex-basis: 40%; 
+}
+
+.lastItem p:nth-of-type(2), .lastItem p:nth-of-type(3){
+   font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.1cqw;
+}
+
+.otherItem h3, .lastItem h3{
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+}
+
+.otherItem p, .lastItem p, .firstItem p{
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.1cqw;
+    margin-top: 15px;
+    opacity: 80%;
+
+
+}
+
+.lastItem img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.copyright{
+    width: 80%;
+    margin: 50px auto 0;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.224);
+    padding: 20px 0 ;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    opacity: 80%;
+}
+
+.menu-button{
+    display: none;
+}
+button{
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1180px){
+    button{
+       cursor: pointer;
+    }
+    .choosePlan button{
+        padding: 5px 18px;
+        font-size: 1.3cqw;
+    }
+
+    .mediaPlan p{
+        font-size: 1.2cqw;
+    }
+
+    .item3{
+        width: 64%;
+    }
+
+    .trustpilotIcon{
+        width: 113px
+    }
+
+    .starsIcon{
+      width: 93px;
+    }
+
+    .contentGroup1 p, .mainContentBArticle p, .question p{
+        font-size: 1.4cqw;
+    }
+    
+}
+
+@media screen and (max-width: 950px){
+    button{
+      cursor: pointer;
+    }
+
+    .hero{
+        height: 600px;
+    }
+    
+    header{
+        width: 90%;
+        justify-content: space-between;
+    }
+
+   .navigation{
+        display: none;
+        position: absolute;
+        background-color: #f1dfd7;
+        width: 100%;
+        height: 100vh;
+        top: 75px;
+        z-index: 2;
+        left: 0;
+    }
+
+   nav{
+        flex-direction: column;
+        font-size: 14px;
+        height: auto;
+        gap: 10px;
+    }
+
+    nav a{
+        border-top: 2px solid rgba(85, 84, 84, 0.224);
+        padding:  7px 10px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        border-radius: 5px;
+    
+    }
+
+    nav a:hover{
+        background-color: rgba(85, 84, 84, 0.224);
+    }
+
+   
+
+    .headerButtonsContainer{
+        flex-direction: column;
+        margin:50px auto 0;
+        width: 90%;
+        height: auto;
+        
+        
+    }
+
+   .headerButtonsContainer button{
+       font-size: 16px;
+       border: 2px solid black;
+       border-radius: 5px;
+       cursor: pointer;
+   }
+
+  
+   .menu-button{
+       display: block;
+   }
+
+    #menu-button{
+     background: none;
+     border: none;
+    }
+
+    #menu-icon{
+        width: 25px;
+    }
+
+   .heroContent{
+        width: 90%;
+        margin: 15px auto 0;
+    }
+
+    .trustpilotIcon{
+        width: 110px
+    }
+
+    .starsIcon{
+       width: 90px;
+    }
+
+    .mainContentA,
+    .mainContentB,
+    .mainContentE,
+    .mainContentF{
+        width: 90%;
+        margin: 60px auto 0;
+    }
+
+    .contentGroup1 p, .mainContentBArticle p, .question p{
+        font-size: 1.5cqw;
+    }
+
+    .choosePlan button{
+        padding: 5px 15px;
+        font-size: 1.5cqw;
+    }
+
+    .mediaPlan, .planItem, .customerReview{
+        padding: 20px 10px;
+    }
+
+    .mediaPlan h3{
+        font-family: 'Inter',sans-serif;
+        font-size: 1.7cqw;
+    }
+
+    .mediaPlan p{
+        font-size: 1.4cqw;    
+    }
+
+    .experienceContainer, .mainContentD, .review, .mainContentH{
+        width: 90%;
+    }
+
+    .planItem .item2 p, .comment{
+        font-size: 1.4cqw;
+    }
+
+    .planItem button{
+        font-size: 1.5cqw;
+        padding: 15px 25px;
+    }
+
+    .mainContentH button{
+        all:unset;
+        display: block;
+        width: 15%;
+        padding: 10px 15px;
+        background-color: black;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 15px auto 0;
+        font-weight: 600;
+        font-family: 'Inter',sans-serif;
+        font-size: 1.3cqw;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .footerContent, .copyright{
+        width: 90%;
+    }
+
+    .otherItem p, .lastItem p, .firstItem p{
+        font-size: 1.29cqw;
+    }
+
+    .lastItem p:nth-of-type(2), .lastItem p:nth-of-type(3){
+        font-weight: 600;
+        font-family: 'Inter',sans-serif;
+        font-size: 1.29cqw;
+    }
+
+    .copyright{
+        font-size: 1.4cqw;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .socialIcon{
+        margin-right: 5px;
+    }
+
+    .item3{
+        width: 65%;
+        display: block;
+        margin: 35px  auto 35px;
+    }
+
+    .trustpilotIcon{
+        display: block;
+        margin: 0 auto 10px;
+        width: 123px;
+    }
+
+    .starsIcon{
+        width: 95px;
+    }
+
+    .item3 p{
+        text-align: center;
+        margin: auto;
+        font-size: 2cqw;
+    }
+
+    .contentGroup1 p, .mainContentBArticle p, .question p{
+        font-size: 2cqw;
+    }
+
+    .mediaPlan p {
+        font-size: 1.7cqw;
+    }
+
+    .planItem .item2 p, .comment{
+        font-size: 1.6cqw;
+    }
+
+
+    footer{
+        padding-top: 20px;
+        background-color: black;
+    }
+
+    .footerLogo{
+        background-color: #f1dfd7;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .footerContent{
+        display: block;
+        margin: auto;
+    }
+
+    .footerContent .firstItem{
+        width: 60%;
+    }
+
+    form{
+        background-color: #ffffff3e;
+    }
+
+    input{
+        background: none;
+    }
+
+    ::placeholder{
+        color: #FFFFFF;
+        opacity: 80%; 
+    }
+
+    .footerContent .secondItem{
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .lastItem{
+        flex-basis: 40%; 
+    }
+
+    .lastItem p:nth-of-type(2), .lastItem p:nth-of-type(3){
+        font-size: 1.5cqw;
+    }
+
+    .otherItem h3, .lastItem h3{
+        color: #FFFFFF;
+    }
+
+    .otherItem p, .lastItem p, .firstItem p{
+        font-size: 1.7cqw;
+        color: #FFFFFF;
+    }
+
+    .copyright{
+        width: 90%;
+        font-size: 1.7cqw;
+        opacity: 80%;
+        color: #FFFFFF;
+        border-top: 1px solid rgba(234, 230, 230, 0.313);
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .hero{
+        background: url(resource/mobileHeroBG.svg);
+        background-size: cover;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .heroContent{
+        position: relative;
+        display: block;
+        width: 97%;
+        height: auto;
+    }
+
+    .socialIcon{
+        width: 26px;
+    }
+
+    .socialIconsContainer{
+        position: absolute;
+        width: 19%;
+        height: 135px;
+        margin-top: 50px;
+        top: 50%;
+    }
+
+    .heroContent3{
+        right: 0;
+    }
+
+    .heroContent2 {
+        width: 95%; 
+        margin: auto;  
+    }
+
+    .heroh1{
+        font-size: 10cqw;
+        padding-top: 0px;
+    }
+
+    .heroP{
+        margin:13px  auto 0;
+        font-size: 4.1cqw;
+    }
+
+    #shapes{
+        width: 28.8px;
+        top: 65px;
+        right: 38px;
+    
+    }
+
+    .heroButtonContainer{
+        display:flex;
+        flex-direction: column;
+        width:55%;
+        margin: 30px auto 0;
+        height: auto; 
+    }
+
+    .heroButtonContainer button{
+        all: unset;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 3cqw;
+        padding: 16px 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .heroButtonContainer button:first-child{
+    border: 2px solid #12141D;
+        margin-bottom: 15px;
+    }
+
+    .item3 p{
+        font-size: 3cqw;
+    }
+
+    .contentGroup1{
+        display: block;
+    }
+
+    .contentGroup1 h2, .mainContentBArticle h2{
+        font-size: 8.4cqw;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contentGroup1 p, .mainContentBArticle p, .question p{
+        font-size: 4cqw;
+        text-align: center;
+    }
+
+    .contentGroup2, .planContainer,.customerReviewContainer{
+        display: block;
+        margin-top: 30px;
+    }
+
+    .mediaPlan, .planItem, .customerReview{
+        padding: 25px 25px;
+    }
+
+    .mediaPlan:not(:last-child), .planItem:not(:last-child), .customerReview:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .mediaIcon{
+        display: block;
+        margin: auto;
+    }
+
+    .mediaPlan h3{
+        font-size: 4cqw ;
+        text-align: center;
+        margin: 12px 0 10px;
+    }
+
+    .mediaPlan p{
+        font-size: 4cqw;
+        text-align: center;
+        margin-bottom: 35px ;
+    }
+
+    .mediaPlan h5{
+        font-size:3cqw ;
+        text-align: center;
+    
+    }
+
+    .mainContentB1{
+        display: block;  
+    }
+
+    .mediaImageContainer{
+        flex-basis: 45%;
+    }
+
+    .mainContentBArticle h2, .mainContentBArticle p {
+        text-align: left;
+    }
+
+    .mainContentBArticle h2{
+    margin: 20px 0;
+    }
+
+    .mainContentBArticle p:first-of-type{
+    margin-bottom: 15px;
+    }
+
+    .orderOption{
+        display: grid;
+    }
+    .second{
+        order: -1;
+    }
+
+    .mainContentC{
+        padding: 20px 0;
+    }
+
+    .experienceContainer{
+        margin: auto;
+        display: block;
+        padding: 20px 0;
+    }
+
+    .experienceItem:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .experienceContainer h2{
+        font-size: 8.4cqw;
+        text-align: center;
+    }
+
+    .experienceContainer p{
+        font-size: 4cqw;
+        text-align: center;
+    }
+
+    .mainContentD{
+        margin: 60px auto;
+        display: block;  
+    }
+
+    .mainContentBArticle h3{
+        font-size:4cqw ;
+    }
+
+    .choosePlan{
+        width: 90%;
+        text-align: center;
+    }
+
+    .choosePlan h2{
+        font-size:7cqw ;
+    }
+
+    .chooseButtonContainer{
+        width: 70%;
+        border-radius: 5px; 
+    }
+
+    .choosePlan button{
+        all: unset;
+        border-radius: 5px;
+        padding: 5px 25px;
+        font-size: 4cqw;
+        font-weight: 500;
+        font-family: 'Inter',sans-serif;
+        cursor: pointer;
+    
+    }
+
+    .planTitle{
+        font-size: 4cqw;
+    }
+
+    .planPrice{
+        font-size: 14cqw;
+    }
+
+    span{
+        font-size: 5cqw;
+    }
+
+    .planPeriod{ 
+        font-size: 3.5cqw;
+    }
+
+    .planItem .item2 p{
+        font-size: 3.5cqw;
+    }
+
+    .planItem button{
+        all: unset;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 600;
+        font-family: 'Inter',sans-serif;
+        font-size: 4cqw;
+        padding: 15px 45px;
+        margin:5px 0 15px;
+        cursor: pointer;
+        
+    }
+
+    .questionContainer{
+        display: block;
+    }
+
+    .question h3{
+        font-size: 5cqw;
+    
+    }
+
+    .question p{
+        text-align: left;
+    }
+
+    .questionContainer:first-child{
+        margin-bottom: 25px;
+    }
+
+    .mainContentG{
+        background: url(resource/experienceBG.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .reviewBg{
+        display: none;
+    }
+
+    .review{
+        width: 90%;
+        margin: 65px auto ; 
+    }
+
+    .mainContentG h2, .mainContentH h2{ 
+        width: 80%; 
+        font-size:7cqw ;    
+    }
+
+    .comment{
+        font-size: 3.5cqw;
+        text-align: left;
+    }
+
+    .customerProfile p:first-child{
+        font-size: 3.5cqw;
+    }
+
+    .customerProfile p:last-child{ 
+        font-size: 3.2cqw; 
+    }
+
+    .mainContentH{ 
+        width:  90%;
+        background: url(resource/contactBg.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .mainContentH button{
+        all:unset;
+        display: block;
+        width: 45%;
+        padding: 16px 20px;
+        background-color: black;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 30px auto 0;
+        font-weight: 600;
+        font-family: 'Inter',sans-serif;
+        font-size: 4cqw;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+
+    .footerContent .firstItem{
+        width: 90%;
+    }
+
+    .footerContent .secondItem{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .otherItem{
+        flex-basis: 150px;
+    }
+
+    .lastItem{
+        flex-basis: 250px;
+    }
+
+    .otherItem h3, .lastItem h3{
+        font-size: 4cqw;
+    }
+
+    .lastItem p:nth-of-type(2), .lastItem p:nth-of-type(3){
+        font-size: 3.5cqw;
+    }
+
+    .otherItem p, .lastItem p, .firstItem p{
+        font-size: 3.5cqw;
+    }
+
+    .copyright{
+        font-size: 3.5cqw;
+    }
+
+
+}
