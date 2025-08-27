@@ -62,7 +62,5 @@ Open `index.html` in your browser.
 
 ## 📝 License  
 
-© 2022 Sark. All Rights Reserved.  
-
-## 📂 Project Structure  
+© 2022 Sark. All Rights Reserved.   
 
