@@ -680,6 +680,11 @@ form button{
     flex-basis: 40%; 
 }
 
+.lastItem a{
+    color: #FFFFFF;
+    opacity: 80%;
+}
+
 .lastItem p:nth-of-type(2), .lastItem p:nth-of-type(3){
    font-weight: 600;
     font-family: 'Inter',sans-serif;
