@@ -67,7 +67,7 @@ gsap.utils.toArray("nav, button").forEach((el) => {
 // Slide Left: specific container
 gsap.from(".experienceContainer", {
   scrollTrigger: {
-    trigger: ".container",
+    trigger: ".experienceContainer",
     start: "top 80%",
     toggleActions: "play none none reverse"
   },
@@ -77,7 +77,7 @@ gsap.from(".experienceContainer", {
 });
 
 // Fade In (opacity increase): paragraphs
-gsap.utils.toArray("p").forEach((el) => {
+gsap.utils.toArray("h3, p").forEach((el) => {
   gsap.from(el, {
     scrollTrigger: {
       trigger: el,
