@@ -215,7 +215,7 @@ nav{
 }
 
 .heroButtonContainer button:hover{
-   scale: 1.05;
+   scale: 1.07;
 }
 
 button img{
@@ -661,6 +661,7 @@ form{
 input{
     padding: 15px 10px;
     border: none;
+    color: #FFFFFF;
     opacity: 70%;
 }
 
@@ -682,7 +683,7 @@ form button{
 
 .lastItem a{
     color: #FFFFFF;
-    opacity: 80%;
+  
 }
 
 .lastItem p:nth-of-type(2), .lastItem p:nth-of-type(3){
@@ -813,15 +814,11 @@ a{
         background-color: rgba(85, 84, 84, 0.224);
     }
 
-   
-
     .headerButtonsContainer{
         flex-direction: column;
         margin:50px auto 0;
         width: 90%;
-        height: auto;
-        
-        
+        height: auto;   
     }
 
    .headerButtonsContainer button{
@@ -829,9 +826,13 @@ a{
        border: 2px solid black;
        border-radius: 5px;
        cursor: pointer;
-   }
+       margin-bottom: 10px; 
+    }
 
-  
+   .headerButtonsContainer button:last-child{
+        margin-left: 0px;
+    }
+
    .menu-button{
        display: block;
    }
