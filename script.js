@@ -24,7 +24,7 @@ menuButton.addEventListener("click", () => {
     ? "/resource/icons8-close.svg"
     : "/resource/icons8-menu.svg";
 
-    navigation.style.display = isMenu? "block" : "none";
+  navigation.style.display = isMenu? "block" : "none";
     
 });
 

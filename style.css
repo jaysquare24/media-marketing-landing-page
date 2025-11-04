@@ -1,13 +1,13 @@
 /*reset default*/
 
 html {
-  font-size: 16px;              /* set a consistent base size */
+  font-size: 16px;             
 }
 
 body {
-  line-height: 1.5;            /* set explicitly for consistency */
-  -webkit-font-smoothing: antialiased; /* smooth in Chrome/Safari */
-  -moz-osx-font-smoothing: grayscale;  /* smooth in Firefox */
+ width: 100%;
+ padding-top: 0;
+ line-height: 1.5;
 }
 
 /* Reset margins/paddings for consistency */
@@ -36,10 +36,7 @@ header{
     margin: auto;
 }
 
-.logo{
-    width: 62px;
-    height: 24px;  
-}
+
 
 .navigation{
     display: flex;
@@ -50,7 +47,6 @@ header{
 
 nav{
     display: flex;
-    height: 24px;
     flex-basis: 40%;
     justify-content: space-between;
     font-weight: 500;
@@ -61,37 +57,31 @@ nav{
     gap: 10px;
 }
 
-    nav a{
-        border-top: 2px solid rgba(85, 84, 84, 0.224);
-        padding:  7px 10px;
-        
-        
-        border-radius: 5px;
-    
-    }
+nav a{
+    padding:  7px 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-in-out ;
+}
 
-    nav a:hover,.headerButtonsContainer button:hover{
-        background-color: rgba(85, 84, 84, 0.224);
-    }
+nav a:hover,.headerButtonsContainer button:hover{
+    background-color: rgba(85, 84, 84, 0.224);
+}
 
 .headerButtonsContainer{
     display: flex;
-    height: 50px;
     justify-content: space-between;
     margin-left: auto;
 }
 
 .headerButtonsContainer button{
-   all: unset;
-   padding: 16px 20px;
-   font-weight: 500;
-   font-size: 1.2cqw;
-   text-align: center;
-   font-family: 'Inter',sans-serif;
-   border-radius:5px ;
-   cursor: pointer;
-   border-top: 2px solid rgba(85, 84, 84, 0.224);
-   
+  all: unset;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Inter',sans-serif;
+  border-radius:5px ;
+  cursor: pointer; 
 
 } 
 
@@ -120,17 +110,14 @@ nav{
     position: relative;
     width: 17%;
     height: 346.7px;
-    margin-top: 50px;
-   
-    
+    margin-top: 50px;   
 }
 
 .topSocialIcon,.bottomSocialIcon {
     position: absolute;
     left: 0;
     right: 0;
-    margin: auto;
-  
+    margin: auto; 
 }
 
 .middleSocialIcon{
@@ -140,10 +127,7 @@ nav{
     top: 0;
     display: flex;
     align-self: center;
-    justify-content: space-between;
- 
-     
-    
+    justify-content: space-between;   
 }
 
 .bottomSocialIcon{
@@ -184,22 +168,21 @@ nav{
 
 .heroButtonContainer{
     display: flex;
-    width:75%;
+    width:60%;
     margin: 50px auto 0;
-    height: 60px;
-    align-content: center;
     justify-content: space-between;
 }
 
 .heroButtonContainer button{
     all: unset;
-    flex-basis: 48%;
+    flex-basis: 47.5%;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 1.4cqw;
+    font-size: 1.1cqw;
     border-radius: 5px;
     cursor: pointer;
+    padding: 13px 0px;
     transition: scale 0.5 ease-in-out;
 }
 
@@ -405,24 +388,23 @@ button img{
 .chooseButtonContainer{
     display: flex;
     width: 55%;
-    padding: 4px 0;
+    padding: 4px;
     margin: auto;
-    justify-content: center;
-    background-color: #f2f8fa;
-    border-radius: 10px;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 15px;
     box-sizing: border-box;
- 
+    box-shadow: 0 4px 60px 0 #28374F1A;
 }
 
 .choosePlan button{
   all: unset;
   border-radius: 10px;
-  padding: 5px 25px;
+  padding: 7px 25px;
   font-size: 1.2cqw;
   font-weight: 500;
   font-family: 'Inter',sans-serif;
   cursor: pointer;
-  
 }
 
 .planButton.active{
@@ -704,8 +686,6 @@ form button{
     font-size: 1.1cqw;
     margin-top: 15px;
     opacity: 80%;
-
-
 }
 
 .lastItem img{
@@ -738,13 +718,23 @@ a{
 
 
 @media screen and (max-width: 1180px){
+
     button{
        cursor: pointer;
     }
+    
+    .heroButtonContainer button{
+      font-size: 1.2cqw;
+    
+    }
+
+
     .choosePlan button{
-        padding: 5px 18px;
+        padding: 7px 18px;
         font-size: 1.3cqw;
     }
+    
+    
 
     .mediaPlan p{
         font-size: 1.2cqw;
@@ -769,6 +759,7 @@ a{
 }
 
 @media screen and (max-width: 950px){
+
     button{
       cursor: pointer;
     }
@@ -833,6 +824,18 @@ a{
         margin-left: 0px;
     }
 
+    .heroButtonContainer{
+        width: 70%;
+    }
+
+    .heroButtonContainer button{
+      padding: 10px 0px;
+      font-size: 1.4cqw;
+      flex-basis: 47%;
+    
+    }
+ 
+
    .menu-button{
        display: block;
    }
@@ -872,7 +875,7 @@ a{
     }
 
     .choosePlan button{
-        padding: 5px 15px;
+        padding: 7px 15px;
         font-size: 1.5cqw;
     }
 
@@ -949,6 +952,17 @@ a{
         margin: 35px  auto 35px;
     }
 
+    .heroButtonContainer{
+        width: 80%;
+    }
+
+    .heroButtonContainer button{
+      padding: 10px 0px;
+      font-size: 1.5cqw;
+      flex-basis: 48%;
+    
+    }
+
     .trustpilotIcon{
         display: block;
         margin: 0 auto 10px;
@@ -971,6 +985,14 @@ a{
 
     .mediaPlan p {
         font-size: 1.7cqw;
+    }
+
+    .chooseButtonContainer{
+        width:63%
+    }
+
+    .choosePlan button{
+        font-size: 1.65cqw;
     }
 
     .planItem .item2 p, .comment{
@@ -1093,7 +1115,6 @@ a{
         width: 28.8px;
         top: 65px;
         right: 38px;
-    
     }
 
     .heroButtonContainer{
